@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Zoom Closer",
-  "description": "This extension automatically closes the launched window from Zoom meetings.",
+  "name": "Tab Closer",
+  "description": "This extension automatically closes tabs after a certain amount of time.",
   "version": "1.6",
 
   "icons": {
@@ -26,6 +26,15 @@
         "https://*.zoom.us/j/*",
         "https://zoom.us/s/*",
         "https://*.zoom.us/s/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    },
+    {
+      "run_at": "document_start",
+      "matches": [
+        "https://*.figma.com/file/*"
       ],
       "js": [
         "content.js"
