@@ -1,5 +1,11 @@
-chrome.runtime.onMessage.addListener(
+browser.runtime.onMessage.addListener(
   function (req, sender) {
-    chrome.tabs.remove(sender.tab.id);
+    switch (req.type) {
+    case 'closeTab':
+      browser.tabs.remove(sender.tab.id);
+      break;
+    default:
+        console.log('Unknown message type: ' + req.type);
+    }
   }
 );
