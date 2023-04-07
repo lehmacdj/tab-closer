@@ -3,7 +3,7 @@
 
   "name": "Tab Closer",
   "description": "This extension automatically closes tabs after a certain amount of time.",
-  "version": "1.6",
+  "version": "1.7",
 
   "background": {
     "scripts": [
