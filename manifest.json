@@ -3,7 +3,7 @@
 
   "name": "Tab Closer",
   "description": "This extension automatically closes tabs after a certain amount of time.",
-  "version": "1.7",
+  "version": "1.8",
 
   "background": {
     "scripts": [
@@ -29,6 +29,15 @@
       "run_at": "document_start",
       "matches": [
         "https://*.figma.com/file/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    },
+    {
+      "run_at": "document_start",
+      "matches": [
+        "https://*.slack.com/archives/*"
       ],
       "js": [
         "content.js"

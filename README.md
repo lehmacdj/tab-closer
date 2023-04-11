@@ -4,6 +4,7 @@ Automatically closes tabs of certain websites 6 seconds after they are opened. T
 Currently supported applications:
 - Zoom
 - Figma
+- Slack
 
 ## Building & Submitting
 Update the version number in [manifest.json](/manifest.json), then build the extension using [web-ext](https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/), i.e. `web-ext build` and then submit the extension in the [Mozilla Developer Hub](https://addons.mozilla.org/en-US/developers/addons).

@@ -8,5 +8,14 @@ setTimeout(function() {
     console.log('skipping closing figma tab because desktop app not launched');
     return;
   }
+
+  if (
+    document.URL.indexOf('slack') > -1 &&
+    document.body.innerText.toLowerCase().indexOf('redirected you to the desktop app') === -1
+  ) {
+    console.log('skipping closing slack tab because desktop app not launched');
+    return;
+  }
+
   browser.runtime.sendMessage({ type: 'closeTab' });
 }, 6000);
